@@ -1,0 +1,35 @@
+.random {
+  height: 100vh;
+}
+.sticky-container {
+  top: 0;
+  position: relative;
+  height: 650px;
+  display: flex;
+  justify-content: center; /* Horizontally center the image wrapper */
+
+  align-items: center; /* Vertically center the image wrapper */
+ 
+}
+
+.image-wrapper {
+  height: 100%;
+  width: 80%;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  border: 100px solid;
+  border-image-source: url('./assets/ipad.png');
+  border-image-slice: 90;   
+}
+
+.image-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
